@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" type="text/css" rel="stylesheet">
+
+        <title>Module 3 Group: News Site</title>
+       
+    </head>
+    
+    
+    <body>
+        <!-- form to create user -->
+        <form name='input' action='createUser.php' method='POST'>
+            <input type="text" name="newUsername" placeholder="New Username">
+            <input type="password" name="newPassword" placeholder="New User's Password">
+            <input type="submit" value="Register">
+            </form>
+        <br>
+        <!-- form to log in -->
+        <form name='input' action='logInFormActionGet.php?id=registered' method='POST'>
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="Log In">
+            </form>
+            
+       <!-- log in as guest -->
+        <a href= 'logInFormActionGet.php?id=guest' > Continue As Guest</a>
+       
+
+    </body>
+</html>
+
+
